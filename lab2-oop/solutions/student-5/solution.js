@@ -398,7 +398,11 @@ function runTests() {
 
 
     console.log('Всего создано транспортных средств:', Vehicle.getTotalVehicles());
-    
+
+
+    // добавлено
+    console.assert(Vehicle.getTotalVehicles() === 9, 'Тест количества созданных машин провален')
+
     console.log('Все тесты пройдены! ✅');
 }
 
