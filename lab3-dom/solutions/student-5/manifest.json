@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "KAI Sepia Style",
+  "version": "1.0",
+  "description": "Изменяет стиль сайта kai.ru на сепию/старую бумагу",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://kai.ru/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
