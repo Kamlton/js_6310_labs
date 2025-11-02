@@ -1,30 +1,30 @@
 {
-  "name": "adpro-bot",
+  "name": "my-supper-proj",
   "version": "1.0.0",
-  "type": "module",
-  "description": "Telegram bot for AdPro advertising agency",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "node --watch src/index.js",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests",
-    "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests --watch",
-    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests --coverage",
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests",
+    "test:watch": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests --watch",
+    "test:coverage": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests --coverage",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
-    "node-telegram-bot-api": "^0.64.0",
-    "dotenv": "^16.3.1"
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "node-telegram-bot-api": "^0.66.0"
   },
   "devDependencies": {
-    "eslint": "^8.52.0",
-    "@eslint/js": "^8.52.0",
-    "jest": "^29.7.0",
-    "@jest/globals": "^29.7.0"
-  },
-  "jest": {
-    "collectCoverageFrom": ["src/**/*.js"],
-    "testEnvironment": "node"
+    "@eslint/js": "^9.36.0",
+    "cross-env": "^10.1.0",
+    "eslint": "^9.36.0",
+    "globals": "^16.4.0",
+    "jest": "^29.7.0"
   }
 }
