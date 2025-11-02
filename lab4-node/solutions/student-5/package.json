@@ -1,0 +1,30 @@
+{
+  "name": "adpro-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Telegram bot for AdPro advertising agency",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests --watch",
+    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.64.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.52.0",
+    "@eslint/js": "^8.52.0",
+    "jest": "^29.7.0",
+    "@jest/globals": "^29.7.0"
+  },
+  "jest": {
+    "collectCoverageFrom": ["src/**/*.js"],
+    "testEnvironment": "node"
+  }
+}
