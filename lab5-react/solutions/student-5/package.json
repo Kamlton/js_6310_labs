@@ -1,0 +1,21 @@
+{
+  "name": "ad-agency-website",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "cd website && npm run dev",
+    "build": "cd ui-library && npm run build && cd ../website && npm run build",
+    "lint": "cd ui-library && npm run lint && cd ../website && npm run lint",
+    "lint:fix": "cd ui-library && npm run lint:fix && cd ../website && npm run lint:fix",
+    "test": "cd ui-library && npm run test && cd ../website && npm run test",
+    "test:coverage": "cd ui-library && npm run test:coverage && cd ../website && npm run test:coverage",
+    "install:all": "cd ui-library && npm install && cd ../website && npm install",
+    "build:lib": "cd ui-library && npm run build",
+    "dev:site": "cd website && npm run dev"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "identity-obj-proxy": "^3.0.0"
+  }
+}
