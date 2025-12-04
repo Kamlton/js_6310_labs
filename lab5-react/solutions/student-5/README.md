@@ -7,7 +7,7 @@ website/ - демонстрационное приложение с пример
 
 ## Технологии
 
-- React 18+ с TypeScript
+- React 18.3.1 с TypeScript
 - Vite для сборки
 - Jest + Testing Library для тестирования
 - ESLint для линтинга
